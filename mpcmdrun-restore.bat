@@ -60,7 +60,7 @@ rem main process
 rem ===========================================================================
 rem Local required file and folder
 rem # Quarantine
-set quarantine_dir_path="%PROGRAMDATA%\Microsoft\Windows Defender\Quarantine2"
+set quarantine_dir_path="%PROGRAMDATA%\Microsoft\Windows Defender\Quarantine"
 rem # MpCmdRun.exe
 rem Available in 1703 and earlier
 set mpcmdrun_exe_path="%ProgramFiles%\Windows Defender\MpCmdRun.exe"
