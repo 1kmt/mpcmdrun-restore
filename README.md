@@ -35,7 +35,7 @@ To work around this issue, you must enclose the path in double quotes and run it
 Change the current directory to the location where you want to install and run the following command:
 ```
 git clone https://github.com/1kmt/mpcmdrun-restore.git
-cd vtscan
+cd mpcmdrun-restore
 ```
 If "git clone" fails, you can download it as ZIP. Click "Download ZIP" from the "Code" dropdown.
 &nbsp;  
