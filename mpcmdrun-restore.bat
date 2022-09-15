@@ -137,9 +137,11 @@ rem ** ***********************************************************************/
 	call:logger "       \Entries, \ResourceData, \Resources"
 	call:logger ""
 	call:logger "   [MpCmdRun.exe]"
-	call:logger "     C:\Program Files\Windows Defender\MpCmdRun.exe"
+	call:logger "     - C:\ProgramData\Microsoft\Windows Defender\Platform\*\MpCmdRun.exe"
+	call:logger "     - C:\Program Files\Windows Defender\MpCmdRun.exe"
 	call:logger "       -Restore [-ListAll] [-Name <name>] [-All]"
 	call:logger "                [-FilePath <filePath>] [-Path]"
+	call:logger ""
 	call:logger ""
 	call:logger "   [Microsoft Defender event]"
 	call:logger "     Open [Event Viewer]"
@@ -412,7 +414,9 @@ rem ** ***********************************************************************/
 	call:logger
 	call:logger "STATUS,COMMAND" "%status_mpcmdrun:"=%,%mpcmdrun_cmd:"=%"
 	if not "%status_mpcmdrun%"=="0" (
-		call:logger E CommandError "Microsoft Defender may be turned off"
+		call:logger E CommandError "Make sure that Microsoft Defender is turned on"
+		call:logger E CommandError "If the return code is -1073740791, System updates or scans may be running in the background"
+		call:logger E CommandError "Please try again after waiting for a while"
 		exit /b 10
 	)
 
