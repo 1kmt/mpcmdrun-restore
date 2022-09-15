@@ -2,7 +2,7 @@
 This tool is a batch file to restore all quarantined items from the "Quarantine" folder of Microsoft Defender provided by a user.
 You can also restore locally quarantined items.
 &nbsp;  
-### <span style="color:pink;font-weight:bold">&#9635;&nbsp;&nbsp;Important notice</span>
+### **&#9635;&nbsp;&nbsp;Important notice**
 - This tool requires administrator privileges to run. (Required to run MpCmdRun.exe)  
 **Automatically restart batch as administrator (-Verb runas).**  
 **At that time, a User Account Control (UAC) warning screen will be displayed.**  
@@ -11,13 +11,13 @@ That's why I recommend using a virtual environment.
 &nbsp;
 ### &#9635;&nbsp;&nbsp;Non-working environment
 I don't think it works in all environments because it is affected by OS versions, other antivirus products and etc.
-- <span style="color:pink;font-weight:bold">Microsoft Defender is turned off</span>
+- **Microsoft Defender is turned off**
   - Other antivirus products are installed
   - Flare-vm is installed
 - If the "Quarantine" folder has been changed from its default location, the code must be modified.
-- <span style="color:pink;font-weight:bold">Scripts must have CRLF line endings (eol=CRLF).</span>
+- **Scripts must have CRLF line endings (eol=CRLF).**
 - Be careful with strings in file paths!  
-<span style="color:pink;font-weight:bold">Drag and drop does not work well if the file path contains commas (,), semicolon (;) or equal sign (=).</span>
+**Drag and drop does not work well if the file path contains commas (,), semicolon (;) or equal sign (=).**
 This is because if a command line argument contains a comma, semicolon or equal sign, it will be treated as whitespace.
 To work around this issue, you must enclose the path in double quotes and run it from the command line.
 &nbsp;
@@ -35,7 +35,7 @@ To work around this issue, you must enclose the path in double quotes and run it
 Change the current directory to the location where you want to install and run the following command:
 ```
 git clone https://github.com/1kmt/mpcmdrun-restore.git
-cd vtscan
+cd mpcmdrun-restore
 ```
 If "git clone" fails, you can download it as ZIP. Click "Download ZIP" from the "Code" dropdown.
 &nbsp;  
