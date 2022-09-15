@@ -84,7 +84,7 @@ If no arguments, restore local quarantined items.
 The following items are quarantined:
 
 ThreatName = Virus:DOS/EICAR_Test_File
-      file:C:\Users\aaa\Desktop\eicar.txt.txt quarantined at 2022/09/11 6:24:51 (UTC)
+      file:C:\Users\aaa\Desktop\eicar.txt quarantined at 2022/09/11 6:24:51 (UTC)
 
 
 2022/09/11-16:13:51.96[I] [STATUS,COMMAND ]"0,C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2207.7-0\X86\MpCmdRun.exe -Restore -ListAll
@@ -95,7 +95,7 @@ ThreatName = Virus:DOS/EICAR_Test_File
 Restoring the following quarantined items to C:\Users\aaa\Desktop\restore_20220911_16.13.51.96:
 
 ThreatName = Virus:DOS/EICAR_Test_File
-   file:C:\Users\aaa\Desktop\eicar.txt.txt quarantined at 2022/09/11 6:24:51 (UTC) was restored
+   file:C:\Users\aaa\Desktop\eicar.txt quarantined at 2022/09/11 6:24:51 (UTC) was restored
 
 
 2022/09/11-16:13:52.05[I] [STATUS,COMMAND ]"0,C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2207.7-0\X86\MpCmdRun.exe -Restore -All -Path C:\Users\aaa\Desktop\restore_20220911_16.13.51.96
@@ -115,7 +115,7 @@ ThreatName = Virus:DOS/EICAR_Test_File
 The following items are quarantined:
 
 ThreatName = Virus:DOS/EICAR_Test_File
-      file:C:\Users\aaa\Desktop\eicar.txt.txt quarantined at 2022/09/11 6:24:51 (UTC)
+      file:C:\Users\aaa\Desktop\eicar.txt quarantined at 2022/09/11 6:24:51 (UTC)
 
 
 2022/09/11-15:58:43.75[I] [STATUS,COMMAND ]"0,C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2207.7-0\X86\MpCmdRun.exe -Restore -ListAll
@@ -126,7 +126,7 @@ ThreatName = Virus:DOS/EICAR_Test_File
 Restoring the following quarantined items to C:\Users\aaa\Desktop\restore_20220911_15.58.43.75:
 
 ThreatName = Virus:DOS/EICAR_Test_File
-   file:C:\Users\aaa\Desktop\eicar.txt.txt quarantined at 2022/09/11 6:24:51 (UTC) was restored
+   file:C:\Users\aaa\Desktop\eicar.txt quarantined at 2022/09/11 6:24:51 (UTC) was restored
 
 
 2022/09/11-15:58:43.82[I] [STATUS,COMMAND ]"0,C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2207.7-0\X86\MpCmdRun.exe -Restore -All -Path C:\Users\aaa\Desktop\restore_20220911_15.58.43.75
