@@ -28,6 +28,7 @@ rem       - Windows Defender turned on
 rem       - No other Antivirus is installed
 rem.
 rem Changelog:
+rem   2022-10-07 ver1.1.2 : fixed to create the Quarantine folder if it does not exist
 rem   2022-09-10 ver1.1.1 : check local registry values
 rem   2022-09-09 ver1.1.0 : changed the specification to restore local 
 rem                         quarantined items if no arguments are specified
@@ -172,9 +173,17 @@ rem ** ***********************************************************************/
 	set exist_mpcmdrun=false
 
 	if exist %quarantine_dir_path% set exist_quarantine=true
+	rem If the folder doesn't exist, create it
+	if "%exist_quarantine%"=="false" (
+		set mkdir_cmd=mkdir %quarantine_dir_path%
+		!mkdir_cmd! > nul 2>&1		
+		if exist %quarantine_dir_path% set exist_quarantine=true
+	)
+
 	if exist %mpcmdrun_exe_path% set exist_mpcmdrun=true
 	call:logger CHK_LOCAL_ENV "%exist_quarantine:"=%,%quarantine_dir_path:"=%"
 	call:logger CHK_LOCAL_ENV "%exist_mpcmdrun:"=%,%mpcmdrun_exe_path:"=%"
+
 
 	set exist_file=true
 	if "%exist_quarantine%"=="false" set exist_file=false
